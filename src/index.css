@@ -394,6 +394,41 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Responsive Overrides */
+.responsive-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.responsive-card {
+  width: 300px;
+  height: 450px;
+}
+
+.responsive-card-center {
+  width: 350px;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  .responsive-card-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .responsive-card {
+    width: 250px;
+    height: 350px;
+  }
+  .responsive-card-center {
+    width: 280px;
+    height: 380px;
+  }
+}
+
 /* From Uiverse.io by whoisyourdeadie */ 
 .matrix-container {
   position: relative;

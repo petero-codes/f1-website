@@ -79,7 +79,7 @@ const Home = () => {
         >
           <h2 style={{ 
             fontFamily: 'Inter', 
-            fontSize: '1.2rem', 
+            fontSize: 'clamp(0.8rem, 2vw, 1.2rem)', 
             color: 'var(--color-text-dim)',
             letterSpacing: '0.4em',
             marginBottom: '1rem'
@@ -87,7 +87,7 @@ const Home = () => {
             THE ULTIMATE VIP EVENT
           </h2>
           <h1 style={{
-            fontSize: '5rem',
+            fontSize: 'clamp(3rem, 8vw, 5rem)',
             lineHeight: 1.1,
             marginBottom: '2rem',
             textShadow: '0 10px 30px rgba(0,0,0,0.8)'
@@ -97,7 +97,7 @@ const Home = () => {
           </h1>
           <p style={{
             fontFamily: 'Inter',
-            fontSize: '1.1rem',
+            fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
             lineHeight: 1.6,
             color: 'var(--color-text-dim)',
             marginBottom: '3rem',
@@ -119,12 +119,13 @@ const Home = () => {
             whileTap={{ scale: 0.95 }}
             style={{
               marginTop: '2rem',
-              padding: '1rem 3rem',
+              padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 5vw, 3rem)',
               backgroundColor: 'transparent',
               border: '1px solid var(--color-neon-red)',
               color: '#fff',
               fontFamily: 'Orbitron',
               fontWeight: 600,
+              fontSize: 'clamp(0.8rem, 2vw, 1rem)',
               letterSpacing: '0.1em',
               cursor: 'pointer',
               background: 'rgba(255, 42, 42, 0.1)',

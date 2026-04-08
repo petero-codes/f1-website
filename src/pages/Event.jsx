@@ -70,14 +70,14 @@ const EventPage = () => {
         transition={{ delay: 0.3, duration: 0.8 }}
         style={{ textAlign: 'center' }}
       >
-        <h2 style={{ color: 'var(--color-neon-blue)', letterSpacing: '0.3em', marginBottom: '1rem', fontSize: '1rem' }}>
+        <h2 style={{ color: 'var(--color-neon-blue)', letterSpacing: '0.3em', marginBottom: '1rem', fontSize: 'clamp(0.8rem, 3vw, 1rem)' }}>
           THE STARTING GRID AWAITS
         </h2>
-        <h1 className="title-font" style={{ fontSize: '4rem', marginBottom: '4rem', textShadow: '0 0 20px rgba(255,255,255,0.2)' }}>
+        <h1 className="title-font" style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '4rem', textShadow: '0 0 20px rgba(255,255,255,0.2)' }}>
           RACE COMMENCES IN
         </h1>
 
-        <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 'clamp(1rem, 3vw, 2rem)', justifyContent: 'center', flexWrap: 'wrap' }}>
           {timeBlocks.map((block, i) => (
             <motion.div 
               key={block.label}
@@ -86,8 +86,8 @@ const EventPage = () => {
               transition={{ delay: 0.5 + (i * 0.1) }}
               className="glass"
               style={{
-                padding: '2rem',
-                minWidth: '150px',
+                padding: 'clamp(1rem, 3vw, 2rem)',
+                minWidth: 'clamp(100px, 15vw, 150px)',
                 borderRadius: '12px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -97,7 +97,7 @@ const EventPage = () => {
             >
               <span style={{ 
                 fontFamily: 'Orbitron', 
-                fontSize: '4rem', 
+                fontSize: 'clamp(2rem, 8vw, 4rem)', 
                 fontWeight: 800,
                 color: '#fff',
                 textShadow: '0 0 15px rgba(255, 42, 42, 0.6)'
@@ -108,7 +108,7 @@ const EventPage = () => {
                 marginTop: '0.5rem', 
                 color: 'var(--color-text-dim)', 
                 letterSpacing: '0.2em',
-                fontSize: '0.8rem'
+                fontSize: 'clamp(0.6rem, 2vw, 0.8rem)'
               }}>
                 {block.label}
               </span>

@@ -120,21 +120,21 @@ const Birthday = () => {
             <motion.div
               initial={{ opacity: 0, rotateX: -60, y: 150, scale: 0.8 }} animate={{ opacity: 1, rotateX: 0, y: 0, scale: 1 }} transition={{ duration: 1.5, type: "spring", stiffness: 40, damping: 15 }}
               className="mirrormorphism"
-              style={{ padding: '4rem 5rem', maxWidth: '900px', textAlign: 'center', background: 'rgba(10, 10, 12, 0.5)' }}
+              style={{ padding: 'min(4rem, 5vw) min(5rem, 5vw)', maxWidth: '900px', textAlign: 'center', background: 'rgba(10, 10, 12, 0.5)', width: '90%' }}
             >
-              <h1 className="title-font" style={{ fontSize: '4.5rem', marginBottom: '2rem', color: 'var(--color-gold)', textShadow: '0 0 30px rgba(212, 175, 55, 0.6), 0 5px 15px rgba(0,0,0,0.9)', lineHeight: 1.1 }}>
+              <h1 className="title-font" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', marginBottom: '2rem', color: 'var(--color-gold)', textShadow: '0 0 30px rgba(212, 175, 55, 0.6), 0 5px 15px rgba(0,0,0,0.9)', lineHeight: 1.1 }}>
                 Happy Birthday, Ian. 🏎️✨
               </h1>
 
               <div style={{ fontFamily: 'Inter', display: 'flex', flexDirection: 'column', gap: '1.5rem', alignItems: 'center' }}>
-                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5, duration: 1.2 }} style={{ padding: '1rem 2rem', borderRadius: '12px', background: 'rgba(255, 42, 42, 0.05)', border: '1px solid var(--color-neon-red)', boxShadow: '0 0 20px rgba(255, 42, 42, 0.2), inset 0 0 15px rgba(255, 42, 42, 0.1)' }}>
-                  <span style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', textShadow: '0 0 10px var(--color-neon-red), 0 0 20px var(--color-neon-red)', letterSpacing: '0.05em' }}>A year of speed, precision, and victory awaits.</span>
+                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.5, duration: 1.2 }} style={{ padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem)', borderRadius: '12px', background: 'rgba(255, 42, 42, 0.05)', border: '1px solid var(--color-neon-red)', boxShadow: '0 0 20px rgba(255, 42, 42, 0.2), inset 0 0 15px rgba(255, 42, 42, 0.1)' }}>
+                  <span style={{ fontSize: 'clamp(0.9rem, 2vw, 1.2rem)', fontWeight: 700, color: '#fff', textShadow: '0 0 10px var(--color-neon-red), 0 0 20px var(--color-neon-red)', letterSpacing: '0.05em' }}>A year of speed, precision, and victory awaits.</span>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.5, duration: 1.2 }} style={{ padding: '1rem 2rem', borderRadius: '12px', background: 'rgba(0, 210, 255, 0.05)', border: '1px solid var(--color-neon-blue)', boxShadow: '0 0 20px rgba(0, 210, 255, 0.2), inset 0 0 15px rgba(0, 210, 255, 0.1)' }}>
-                  <span style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', textShadow: '0 0 10px var(--color-neon-blue), 0 0 20px var(--color-neon-blue)', letterSpacing: '0.05em' }}>May your days shine as bright as the track lights,<br />and may every lap be legendary.</span>
+                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.5, duration: 1.2 }} style={{ padding: 'clamp(0.8rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem)', borderRadius: '12px', background: 'rgba(0, 210, 255, 0.05)', border: '1px solid var(--color-neon-blue)', boxShadow: '0 0 20px rgba(0, 210, 255, 0.2), inset 0 0 15px rgba(0, 210, 255, 0.1)' }}>
+                  <span style={{ fontSize: 'clamp(0.9rem, 2vw, 1.2rem)', fontWeight: 700, color: '#fff', textShadow: '0 0 10px var(--color-neon-blue), 0 0 20px var(--color-neon-blue)', letterSpacing: '0.05em' }}>May your days shine as bright as the track lights,<br />and may every lap be legendary.</span>
                 </motion.div>
-                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 4, duration: 1.5 }} style={{ padding: '1.2rem 2.5rem', borderRadius: '12px', background: 'rgba(212, 175, 55, 0.05)', border: '1px solid var(--color-gold)', boxShadow: '0 0 25px rgba(212, 175, 55, 0.3), inset 0 0 20px rgba(212, 175, 55, 0.15)', marginTop: '1rem' }}>
-                  <span style={{ fontSize: '1.5rem', fontWeight: 800, color: '#fff', textShadow: '0 0 10px var(--color-gold), 0 0 20px var(--color-gold)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Here’s to owning the circuit of life, like only you can.</span>
+                <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 4, duration: 1.5 }} style={{ padding: 'clamp(1rem, 3vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem)', borderRadius: '12px', background: 'rgba(212, 175, 55, 0.05)', border: '1px solid var(--color-gold)', boxShadow: '0 0 25px rgba(212, 175, 55, 0.3), inset 0 0 20px rgba(212, 175, 55, 0.15)', marginTop: '1rem' }}>
+                  <span style={{ fontSize: 'clamp(1rem, 3vw, 1.5rem)', fontWeight: 800, color: '#fff', textShadow: '0 0 10px var(--color-gold), 0 0 20px var(--color-gold)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Here’s to owning the circuit of life, like only you can.</span>
                 </motion.div>
 
                 {/* THE COSMIC TOGGLE - Fades in AFTER the message (delay 6.5s) */}
@@ -190,21 +190,21 @@ const Birthday = () => {
       <AnimatePresence>
         {stage >= 6 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}
-            style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '3rem', zIndex: 20, padding: '2rem' }}
-            className="perspective-container"
+            style={{ position: 'absolute', inset: 0, zIndex: 20 }}
+            className="perspective-container responsive-card-container"
           >
-            <motion.div initial={{ rotateY: 30, y: 100, opacity: 0 }} animate={{ rotateY: 15, y: 0, opacity: 1 }} transition={{ duration: 1.5, type: 'spring' }} className="mirrormorphism"
-              style={{ width: '300px', height: '450px', background: 'rgba(0,255,65,0.05)', border: '1px solid rgba(0,255,65,0.3)', overflow: 'hidden' }}>
+            <motion.div initial={{ rotateY: 30, y: 100, opacity: 0 }} animate={{ rotateY: 15, y: 0, opacity: 1 }} transition={{ duration: 1.5, type: 'spring' }} className="mirrormorphism responsive-card"
+              style={{ background: 'rgba(0,255,65,0.05)', border: '1px solid rgba(0,255,65,0.3)', overflow: 'hidden' }}>
               <img src="/51c1312c-c1a4-46c0-9062-265f013f9ab0-scaled.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8, mixBlendMode: 'screen' }} />
             </motion.div>
 
-            <motion.div initial={{ y: 150, z: 100, opacity: 0 }} animate={{ y: 0, z: 50, opacity: 1 }} transition={{ duration: 1.5, delay: 0.5, type: 'spring' }} className="mirrormorphism"
-              style={{ width: '350px', height: '500px', background: 'rgba(0,255,65,0.1)', border: '1px solid rgba(0,255,65,0.5)', overflow: 'hidden', boxShadow: '0 0 40px rgba(0,255,65,0.2)' }}>
+            <motion.div initial={{ y: 150, z: 100, opacity: 0 }} animate={{ y: 0, z: 50, opacity: 1 }} transition={{ duration: 1.5, delay: 0.5, type: 'spring' }} className="mirrormorphism responsive-card-center"
+              style={{ background: 'rgba(0,255,65,0.1)', border: '1px solid rgba(0,255,65,0.5)', overflow: 'hidden', boxShadow: '0 0 40px rgba(0,255,65,0.2)' }}>
               <img src="/360_F_553226572_EY85Xctwm2OS4KFN3YnkNA6bx2rFmAY4.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.9, mixBlendMode: 'hard-light' }} />
             </motion.div>
 
-            <motion.div initial={{ rotateY: -30, y: 100, opacity: 0 }} animate={{ rotateY: -15, y: 0, opacity: 1 }} transition={{ duration: 1.5, delay: 0.8, type: 'spring' }} className="mirrormorphism"
-              style={{ width: '300px', height: '450px', background: 'rgba(0,255,65,0.05)', border: '1px solid rgba(0,255,65,0.3)', overflow: 'hidden' }}>
+            <motion.div initial={{ rotateY: -30, y: 100, opacity: 0 }} animate={{ rotateY: -15, y: 0, opacity: 1 }} transition={{ duration: 1.5, delay: 0.8, type: 'spring' }} className="mirrormorphism responsive-card"
+              style={{ background: 'rgba(0,255,65,0.05)', border: '1px solid rgba(0,255,65,0.3)', overflow: 'hidden' }}>
               <img src="/a2bdcac34aa77a748ef48558cbc54c02.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.8, mixBlendMode: 'screen' }} />
             </motion.div>
           </motion.div>
@@ -255,7 +255,7 @@ const Birthday = () => {
                     }}
                     style={{
                       fontFamily: 'Orbitron',
-                      fontSize: '8rem',
+                      fontSize: 'clamp(2.5rem, 10vw, 8rem)',
                       fontWeight: 800,
                       color: 'var(--color-gold)',
                       textShadow: '0 0 40px rgba(212, 175, 55, 0.8), 2px 2px 0px #000, -2px -2px 0px #fff',
