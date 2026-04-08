@@ -115,7 +115,7 @@ const Birthday = () => {
           <motion.div 
             key="stage-4-msg"
             exit={{ opacity: 0, y: -50, scale: 0.9 }} transition={{ duration: 1 }}
-            className="perspective-container" style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 20 }}
+            className="perspective-container responsive-stage-container" style={{ zIndex: 20 }}
           >
             <motion.div
               initial={{ opacity: 0, rotateX: -60, y: 150, scale: 0.8 }} animate={{ opacity: 1, rotateX: 0, y: 0, scale: 1 }} transition={{ duration: 1.5, type: "spring", stiffness: 40, damping: 15 }}
@@ -174,9 +174,10 @@ const Birthday = () => {
 
       {/* STAGE 5: LOADING SEQUENCE */}
       <AnimatePresence>
-        {stage >= 5 && stage < 6 && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 1.5 }} transition={{ duration: 1 }}
-            style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 25 }}
+        {stage === 5 && (
+          <motion.div 
+            className="responsive-stage-container" style={{ zIndex: 25 }}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, scale: 1.5 }} transition={{ duration: 1 }}
           >
             <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }}>
               <Loader2 size={64} color="var(--color-neon-blue)" style={{ filter: 'drop-shadow(0 0 10px var(--color-neon-blue))' }} />
@@ -190,7 +191,7 @@ const Birthday = () => {
       <AnimatePresence>
         {stage >= 6 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}
-            style={{ position: 'absolute', inset: 0, zIndex: 20 }}
+            style={{ zIndex: 20 }}
             className="perspective-container responsive-card-container"
           >
             <motion.div initial={{ rotateY: 30, y: 100, opacity: 0 }} animate={{ rotateY: 15, y: 0, opacity: 1 }} transition={{ duration: 1.5, type: 'spring' }} className="mirrormorphism responsive-card"
@@ -215,10 +216,10 @@ const Birthday = () => {
       <AnimatePresence>
         {stage >= 8 && (
           <div 
-            className="perspective-container"
-            style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 40, pointerEvents: 'none' }}
+            className="perspective-container responsive-stage-container"
+            style={{ zIndex: 40, pointerEvents: 'none' }}
           >
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <div style={{ display: 'flex', gap: 'clamp(0.1rem, 1vw, 0.5rem)', flexWrap: 'wrap', justifyContent: 'center' }}>
               {"KAKUBAMBE".split('').map((letter, index) => {
                 const randomX = (Math.random() - 0.5) * 2000;
                 const randomY = (Math.random() - 0.5) * 2000;
@@ -255,7 +256,7 @@ const Birthday = () => {
                     }}
                     style={{
                       fontFamily: 'Orbitron',
-                      fontSize: 'clamp(2.5rem, 10vw, 8rem)',
+                      fontSize: 'clamp(2rem, 8vw, 8rem)',
                       fontWeight: 800,
                       color: 'var(--color-gold)',
                       textShadow: '0 0 40px rgba(212, 175, 55, 0.8), 2px 2px 0px #000, -2px -2px 0px #fff',
